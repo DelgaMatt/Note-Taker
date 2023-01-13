@@ -6,5 +6,10 @@
     {
         "title": "New Note",
         "text": "this is a test note"
+    },
+    {
+        "title": "New Note",
+        "text": "this is a test note",
+        "id": "gj9rli1nekjnf7mkjfzh"
     }
 ]

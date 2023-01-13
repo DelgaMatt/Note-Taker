@@ -2,7 +2,7 @@ const app = require(`express`).Router();
 const path = require(`path`);
 const database = require(`../db/db.json`);
 const { writeToFile, readAndAppend } = require("../helpers/fsUtils");
-//localhost:3001/api/notes
+const generateUniqueId = require('generate-unique-id');
 
 //front end wanting to get something from the back end
 app.route(`/notes`)
@@ -18,21 +18,17 @@ app.route(`/notes`)
         if (title && text) {
             const newNote = {
                 title,
-                text
+                text,
+                id: generateUniqueId()
             }
             
             database.push(newNote);
-
-            // writeToFile(`../db/db.json`, newNote);
             readAndAppend(newNote, `./db/db.json`);
-
             res.json(`${req.method} request received to add a note`);
         } else {
             res.send(`There's an error in adding your note.`);
-            // console.log(error);
         };
-        // should receive a new note to save on the request body, add it to the db.json file,
-        // and then return the new note to the client. 
+
     })
 
     // .delete(`/notes/:id`, (req, res) => {
