@@ -1,8 +1,15 @@
-const express = require(`express`);
-const noteRoutes = require(``);
+const app = require(`express`).Router();
+const path = require(`path`);
 
-const app = express();
+//Foundational routes
+//------------------------------
+app.get(`/`, (req, res) =>
+    res.status(200).sendFile(path.join(__dirname, `/public/index.html`))
+);
 
-app.use(`/notes`, noteRoutes);
+app.get(`/notes`, (req, res) =>
+    res.status(200).sendFile(path.join(__dirname, `../public/notes.html`))
+);
+//------------------------------
 
 module.exports = app;
