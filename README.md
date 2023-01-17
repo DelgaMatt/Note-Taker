@@ -1,2 +1,27 @@
-# Note-Taker
-A full stack application utilizing ExpressJS that can be used to write and save notes.
+# Note Taker
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ## Description
+  an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribute](#contributing)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions?](#questions)
+  ## Installation
+  
+  ## Usage
+  
+  ## License
+  This app is covered under the [MIT License](https://opensource.org/licenses/MIT)<br>
+  Copyright (C) Matthew Delgado 2023
+  ## Contributing
+  Created by: DelgaMatt
+  <br>
+  If you would like to contribute or add to this application, please fork the project repository onto your github account.
+  ## Tests
+  
+  ## Questions
+  View this project repository on [Github](https://github.com/DelgaMatt)<br>
+  If you have any further questions about the application or how you can contribute, you can reach me by email at: matthewrdelgado@gmail.com
