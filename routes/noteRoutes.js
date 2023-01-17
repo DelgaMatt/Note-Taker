@@ -4,6 +4,7 @@ const database = require(`../db/db.json`);
 const { writeToFile, readAndAppend } = require("../helpers/fsUtils");
 const generateUniqueId = require('generate-unique-id');
 
+//Back End Routes
 //front end wanting to get something from the back end
 app.route(`/notes`)
     .get(function (req, res) {
@@ -13,6 +14,7 @@ app.route(`/notes`)
 
     // front end wanting to save something to the back end
     .post(function (req, res) {
+        console.log(`${req.method} request recieved for notes`);
         const { title, text } = req.body;
         
         if (title && text) {
@@ -28,13 +30,17 @@ app.route(`/notes`)
         } else {
             res.send(`There's an error in adding your note.`);
         };
-
     })
 
-    // .delete(`/notes/:id`, (req, res) => {
-    //     // should receive a query parameter containing the id of a note to delete. 
-    //     // In order to delete a note, you'll need to read all notes from the db.json file, 
-    //     // remove the note with the given id property, and then rewrite the notes to the db.json file.
-    // });
+app.delete(`/notes/:id`, (req, res) => {
+    console.log(`${req.method} request recieved for notes`);
+    const { id } = req.params;
+    const noteIndex = database.findIndex(notes => notes.id === id);
+
+    database.splice(noteIndex, 1);
+    writeToFile(`./db/db.json`, database);
+
+    res.json(`${req.method} request received to delete a note`);
+})
 
     module.exports = app;

@@ -1,15 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "New Note",
-        "text": "this is a test note"
-    },
-    {
-        "title": "New Note",
-        "text": "this is a test note",
-        "id": "gj9rli1nekjnf7mkjfzh"
+        "title": "First Node",
+        "text": "Be sure to psudocode your routes when practicing modular routing.",
+        "id": "5s2okd0wquxus86oq31n"
     }
 ]
