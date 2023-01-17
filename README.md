@@ -1,7 +1,7 @@
 # Note Taker
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
-  an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+  An application that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
