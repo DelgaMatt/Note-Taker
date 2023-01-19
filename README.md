@@ -28,7 +28,6 @@
   Created by: DelgaMatt
   <br>
   If you would like to contribute or add to this application, please fork the project repository onto your github account.
-  ## Tests
   
   ## Questions
   View this project repository on [Github](https://github.com/DelgaMatt)<br>
