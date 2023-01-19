@@ -10,9 +10,11 @@
   - [Tests](#tests)
   - [Questions?](#questions)
   ## Installation
-  
+  If you would like to run this application from a local server, clone the repository onto your local machine.
   ## Usage
-  
+  In order to use this application, you can find it deployed to heroku [here]().
+
+  If you'd like to run this application locally, after installation, open the integrated terminal on the server.js file and run 'node server.js'.
   ## License
   This app is covered under the [MIT License](https://opensource.org/licenses/MIT)<br>
   Copyright (C) Matthew Delgado 2023
