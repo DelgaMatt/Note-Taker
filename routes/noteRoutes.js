@@ -4,15 +4,13 @@ const database = require(`../db/db.json`);
 const { writeToFile, readAndAppend } = require("../helpers/fsUtils");
 const generateUniqueId = require('generate-unique-id');
 
-//Back End Routes
-//front end wanting to get something from the back end
+
 app.route(`/notes`)
     .get(function (req, res) {
         console.log(`${req.method} request recieved for notes`);
         res.json(database);
     })
 
-    // front end wanting to save something to the back end
     .post(function (req, res) {
         console.log(`${req.method} request recieved for notes`);
         const { title, text } = req.body;
