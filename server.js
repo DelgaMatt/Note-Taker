@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3001;
 app.use(express.static(`public`));
 
 //middleware
-//It parses incoming JSON requests and puts the parsed data in req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', apiRoutes);
