@@ -7,7 +7,6 @@
   - [Usage](#usage)
   - [Contribute](#contributing)
   - [License](#license)
-  - [Tests](#tests)
   - [Questions?](#questions)
   ## Installation
   If you would like to run this application from a local server, clone the repository onto your local machine.
